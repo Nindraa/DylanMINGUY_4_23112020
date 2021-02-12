@@ -1028,6 +1028,12 @@ h4 {
     }
 }
 
+.text_bloc2 {
+    font-size: 22px;
+    width: 60%;
+    margin-left: 20%;
+}
+
 @media (max-width: 400px) {
     .bloc {
         padding-left: 0;
