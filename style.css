@@ -317,7 +317,7 @@ a:hover {
 
 .navbar .nav {
     padding-top: 2px;
-    margin-right: -16px;
+    margin-right: 10px;
     float: right;
     z-index: 1;
 }
@@ -366,9 +366,13 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 50px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
+    }
+
+    .accueil {
+        margin-right: 30px;
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -519,6 +523,7 @@ button {
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+    display: none;
 }
 
 .scrollToTop span {
@@ -651,7 +656,8 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
+    z-index: 5;
 }
 
 .container {
@@ -660,6 +666,7 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    z-index: 3;
 }
 
 .hero-bloc-text-sub {
@@ -736,7 +743,11 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: white!important;
+}
+
+.black {
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -775,12 +786,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -789,7 +800,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .ltc-white:hover {
@@ -848,13 +859,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -873,8 +884,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 2%;
+        width: 100%;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +895,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1045,4 +1054,41 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.avis {
+    font-size: 20px;
+}
+
+.auteur {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.title_section4 {
+    font-size: 28px;
+}
+
+#bloc-8 {
+    color: black!important;
+}
+
+.fa-twitter {
+    color: black!important;
+}
+
+.fa-facebook {
+    color: black!important;
+}
+
+.fa-dribbble {
+    color: black!important;
+}
+
+.fa-instagram {
+    color: black!important;
+}
+
+#message {
+    columns: 70;
 }
